@@ -1,4 +1,4 @@
-# SGD-CSS-Framework
+# Super Tiny SGD-CSS-Framework
 Ultra simple and small responsive Framework without jQuery. Only pure CSS and pure tiny Javascript. 
 
 Demo Elements inside index.  
