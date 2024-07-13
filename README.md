@@ -1,7 +1,9 @@
 # SGD-CSS-Framework
-Ultra small responsive Framework without jQuery Demo Elements inside. 
-No other Framework conflicts because all class Names started with sgd-prefix. 
+Ultra simple and small responsive Framework without jQuery. Only Pure CSS and pure Javascript. 
 
-Created for developers that will not start with overblowed Frameworks. 
+Demo Elements inside index.  
+No other Framework conflicts because all class Names started with sgd- **prefix. 
 
-have fun its free for use :) 
+Created for Developers that will not start with overblowed Frameworks. 
+
+Have fun its free for use :) 
