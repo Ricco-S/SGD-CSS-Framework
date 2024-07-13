@@ -7,6 +7,7 @@
 
   --text-color: #333;
 
+
   --button-primary-text-color: #fff;
   --button-primary-bg-color: #007bff;
   --button-primary-hover-bg-color: #0056b3;
@@ -19,6 +20,7 @@
   --button-secondary-active-bg-color: #314356;
   --button-secondary-focus-bg-color: #314356;    
     
+
   --nav-link-color: #46484b;
   --nav-link-hover-color: #333;
   --nav-link-active-color: #333;
@@ -31,7 +33,8 @@
     
   --nav-dropdown-background-color: #fff;
   --navbar-background-color: #fff;
-       
+    
+    
   --background-color: #fff; 
     
   --border-color: #eee;
@@ -53,15 +56,21 @@
   --tab-border-color:  #eee;
   --tab-active-bg-color: #007bff;
   --tab-active-color: #fff;
-       
+    
+    
   --form-border-focus: #007bff; 
     
   --checkbox-bg: #fff;
   --checkbox-active-bg: #007bff;
   --checkbox-active-border: #007bff;
   --checkbox-active-color: #fff;   
-  
+
+  --nav-breakpoint: 767px;
 }
+
+
+
+
 
 /* Basic Styles */
 body {
@@ -69,6 +78,7 @@ body {
   line-height: 1.6;
   margin: 0px;
   color: var(--text-color);
+  font-size:16px;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -319,6 +329,7 @@ section:after,
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size:16px;
 }
 .sgd-btn-primary:hover {
   background-color: var(--button-primary-hover-bg-color);
@@ -332,6 +343,7 @@ section:after,
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size:16px;
 }
 .sgd-btn-secondary:hover {
   background-color: var(--button-secondary-hover-bg-color);
@@ -341,6 +353,7 @@ section:after,
 .sgd-dropdown-btn {
   position: relative;
   display: inline-block;
+  font-size:16px;
 }
 
 .sgd-dropdown-btn-content {
@@ -508,6 +521,7 @@ nav .sgd-row {
 
 .sgd-nav-dropdown-toggle.sgd-active .sgd-caret::before {
   content: "▴";
+  font-size:16px;
 }
 
 
@@ -663,6 +677,7 @@ nav .sgd-row {
 .sgd-accordion {
   cursor: pointer;
   padding: 18px;
+  font-size:16px;
   width: 100%;
   text-align: left;
   border: none;
@@ -707,6 +722,7 @@ nav .sgd-row {
   border: 1px solid var(--tab-border-color);
   background-color: var(--tab-bg-color);
   color: var(--tab-color);
+  font-size:16px;
 }
 .sgd-tab button:hover {
   border: 1px solid var(--tab-active-bg-color);
@@ -729,8 +745,9 @@ nav .sgd-row {
 }
 
 /* Forms */
-input, textarea{
+input, textarea, select{
     outline: 0px;
+    font-size:16px;
 }
 input[type="text"]:focus-visible, 
 input[type="text"]:focus,
@@ -913,6 +930,9 @@ thead {
 }
 
 @media screen and (max-width: 767px) {
+  .sgd-warp{
+   padding-top: 30px;
+   }
   .sgd-modal-content {
     max-width: 95vw;
   }
@@ -939,4 +959,3 @@ thead {
     text-align: left;
   }
 }
-
