@@ -1,1 +1,311 @@
-
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive CSS Framework</title>
+    <link href="sgd-1.0.0.css" rel="stylesheet" />
+</head>
+<style>
+section {
+    margin-top: 30px;
+    padding-bottom: 60px;
+    border-bottom: 0.5px solid #eee;
+}
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="sgd-navbar" id="sgd-navbar">
+        <div class="sgd-navbar-header" id="sgd-navbar-header">
+            <a class="sgd-navbar-brand" href="#home">
+                <img class="sgd-responsive-img sgd-logo" src="https://placehold.co/120x60" alt="Logo" />
+            </a>
+            <button type="button" class="sgd-navbar-toggle">
+                <div class="sgd-hamburger" id="sgd-hamburger">
+                    <div class="sgd-bar1"></div>
+                    <div class="sgd-bar2"></div>
+                    <div class="sgd-bar3"></div>
+                </div>
+            </button>
+        </div>
+        
+        <div class="sgd-container">
+        <div class="sgd-row">
+            
+        <div class="sgd-collapse sgd-navbar-collapse" id="sgd-navbar-menu">
+            <ul class="sgd-navbar-nav">
+                <li class="sgd-li"><a href="#home" class="sgd-active">Start</a></li>
+                <li class="sgd-nav-dropdown">
+                    <a href="#services" class="sgd-nav-dropdown-toggle">Service <span class="sgd-caret"></span></a>
+                    <ul class="sgd-nav-dropdown-menu">
+                        <li class="sgd-li"><a href="#service1">Service 1</a></li>
+                        <li class="sgd-li"><a href="#service2">Service 2</a></li>
+                        <li class="sgd-li"><a href="#service3">Service 3</a></li>
+                    </ul>
+                </li>
+                <li class="sgd-li"><a href="#about">Über</a></li>
+                <li class="sgd-li"><a class="sgd-scroll-to" href="#test">Kontakt</a></li>
+            </ul>
+        </div>
+            
+       </div>    
+      </div>
+    </nav>
+    
+    <main class="sgd-warp">
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <div class="sgd-col-md-12">
+                        <h1 class="sgd-h1">H1 Headline</h1>
+                        <br>
+                        <h2 class="sgd-h2">H2 Headline</h2>
+                        <br>
+                        <h3 class="sgd-h3">H3 Headline</h3>
+                        <br>
+                        <h4 class="sgd-h4">H4 Headline</h4>
+                        <br>
+                        <h5 class="sgd-h5">H5 Headline</h5>
+                        <br>
+                        <h6 class="sgd-h6">H6 Headline</h6>
+                        <br>
+                        <p>Content Text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container container-bg">
+                <div class="sgd-row">
+                    <h3>Grid Cols</h3>
+                    <div class="sgd-col-md-12">
+                        Col md 12
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sgd-container container-bg">
+                <div class="sgd-row">
+                    <div class="sgd-col-xxs-12 sgd-col-xs-6 sgd-col-md-6">
+                        Col md 6
+                    </div>
+                    <div class="sgd-col-xxs-12 sgd-col-xs-6 sgd-col-md-6">
+                        Col md 6
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sgd-container container-bg">
+                <div class="sgd-row">
+                    <div class="sgd-col-xs-6 sgd-col-sm-3 sgd-col-md-3">
+                        Col md 3
+                    </div>
+                    <div class="sgd-col-xs-6 sgd-col-sm-3 sgd-col-md-3">
+                        Col md 3
+                    </div>
+                    <div class="sgd-col-xs-6 sgd-col-sm-3 sgd-col-md-3">
+                        Col md 3
+                    </div>
+                    <div class="sgd-col-xs-6 sgd-col-sm-3 sgd-col-md-3">
+                        Col md 3
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sgd-container container-bg">
+                <div class="sgd-row">
+                    <div class="sgd-col-sm-4 sgd-col-md-4">
+                        Col md 4
+                    </div>
+                    <div class="sgd-col-sm-4 sgd-col-md-4">
+                        Col md 4
+                    </div>
+                    <div class="sgd-col-sm-4 sgd-col-md-4">
+                        Col md 4
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Buttons</h3>
+                    <button class="sgd-btn-primary">Primary Button</button>
+                    <button class="sgd-btn-secondary">Secondary Button</button>
+                    
+                    <div class="sgd-dropdown-btn sgd-dropdown-toggle">
+                        <button class="sgd-btn-primary sgd-btn-dropdown-menu">Dropdown</button>
+                        <div class="sgd-dropdown-btn-content sgd-btn-dropdown-toggle">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    
+                    <button class="sgd-btn-primary" data-modal-target="#myModal">Modal öffnen</button>
+                    <div id="myModal" class="sgd-modal">
+                        <div class="sgd-modal-content">
+                            <span class="sgd-close">&times;</span>
+                            <p>Platzhalter Text..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Accordions</h3>
+                    <button class="sgd-accordion sgd-active">Accordion 1</button>
+                    <div class="sgd-panel sgd-active">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="sgd-accordion">Accordion 2</button>
+                    <div class="sgd-panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Tab Content</h3>
+                    <div class="sgd-tab">
+                        <button class="sgd-tablinks sgd-active" onclick="openTab(event, 'Tab1')">Tab 1</button>
+                        <button class="sgd-tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+                        <button class="sgd-tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+                    </div>
+                    <div id="Tab1" class="sgd-tabcontent sgd-active" style="display:block">
+                        <h3>Tab 1</h3>
+                        <p>Content Tab 1.</p>
+                    </div>
+                    <div id="Tab2" class="sgd-tabcontent">
+                        <h3>Tab 2</h3>
+                        <p>Content Tab 2.</p>
+                    </div>
+                    <div id="Tab3" class="sgd-tabcontent">
+                        <h3>Tab 3</h3>
+                        <p>Content Tab 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="test">
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Formulare</h3>
+                    <form>
+                        <label for="fname">Vorname</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Vorname.." />
+                        <label for="lname">Nachname</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Nachname.." />
+                        <textarea width="100%" height="300px" placeholder="Inhalt..."></textarea>
+                        <label for="country">Land</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australien</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <div class="sgd-col-md-12">
+                            <label>
+                                <input type="checkbox" class="sgd-styled-checkbox" checked /> Ich stimme den Bedingungen zu.
+                            </label>
+                        </div>
+                        <div class="sgd-col-md-12">
+                            <label class="sgd-switch">
+                                <input type="checkbox" checked />
+                                <span class="sgd-slider sgd-round"></span>
+                            </label>
+                        </div>
+                        <div class="sgd-col-md-12">
+                            <input class="sgd-btn-primary" type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Responsive Image</h3>
+                    <img src="https://placehold.co/600x400" alt="Responsive" class="sgd-responsive-img" />
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Responsive Video</h3>
+                    <div class="sgd-responsive-video">
+                        <iframe
+                            title=""
+                            width="100%"
+                            height="515"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                            allowfullscreen
+                            frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="sgd-container">
+            <div class="sgd-row">
+              <h3>Search Box</h3>
+               <div class="search-box-container">
+                <input type="text" class="sgd-search-box" placeholder="Suche..">
+                <button class="sgd-btn-primary">Suche</button>
+            </div>
+          </div>
+       </div>
+        </section>
+        
+        <section>
+            <div class="sgd-container">
+                <div class="sgd-row">
+                    <h3>Responsive Table</h3>
+                    <table class="sgd-responsive-table sgd-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Alter</th>
+                                <th>Land</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Name">John</td>
+                                <td data-label="Age">25</td>
+                                <td data-label="Country">USA</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name">Anna</td>
+                                <td data-label="Age">22</td>
+                                <td data-label="Country">Canada</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name">Peter</td>
+                                <td data-label="Age">28</td>
+                                <td data-label="Country">Australia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <button id="sgd-scrollToTopBtn" class="sgd-scroll-to-top">Top</button>
+    
+    <script src="sgd-1.0.0.js"></script>
+</body>
+</html>
